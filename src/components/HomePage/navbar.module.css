@@ -1,0 +1,4 @@
+.active {
+    padding-bottom: 0.7vh;
+    border-bottom: 3px solid rgba(90, 55, 38, 0.5) !important;
+}

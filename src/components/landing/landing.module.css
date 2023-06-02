@@ -1,0 +1,105 @@
+.landingContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer {
+  width: 60vw;
+  height: 100vh;
+  box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(
+    to top,
+    rgba(143, 135, 112, 0.8) 14%,
+    rgba(139, 139, 139, 0.8) 49%,
+    rgba(132, 142, 149, 0.8) 69%
+  );
+}
+
+.bgimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba(143, 135, 112, 0.8) 14%,
+      rgba(139, 139, 139, 0.8) 49%,
+      rgba(132, 142, 149, 0.8) 69%
+    ),
+    url("../../images/4.jpg");
+  filter: blur(4px);
+  background-position: right;
+  background-size: cover;
+}
+
+.logoContainer img {
+  position: relative;
+  top: 5vh;
+}
+
+.description {
+  position: relative;
+  top:10vh;
+  text-align: center;
+  width: 95%;
+  line-height: 6vh;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Courgette", cursive;
+  font-family: "Merienda", cursive;
+  font-weight: 600;
+}
+
+.description span {
+  font-weight: 600;
+  color: #5a3726;
+  font-size: xx-large;
+}
+
+.actions {
+  width: 40vw;
+  height: 100vh;
+  padding: 0 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1075px) {
+  .description {
+    font-size: small;
+  }
+}
+
+@media (max-width: 960px) {
+  .landingContainer {
+    flex-direction: column;
+  }
+
+  .logoContainer {
+    width: 100%;
+    height: 120vh;
+  }
+  .actions {
+    width: auto;
+  }
+}
+
+@media (max-width: 400px)  {
+  .description {
+    font-size: small;
+  }
+  .description span {
+    font-size: x-large;
+  }
+  .logoContainer img {
+    height: 42vh;
+  }
+}
