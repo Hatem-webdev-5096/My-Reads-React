@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  .css-19c55bt-JoyTabList-root .MuiTab-root.Joy-selected::before{
+    background-color: #5a3726 !important;
+  }
+  
+  .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
+    background-color: rgb(221, 217, 217) !important;
+    color: #5a3726 !important;
+  }
+  
+  .css-1q39md6-MuiButtonBase-root-MuiButton-root {
+    color: #5a3726 !important;
+  }
+  
+  .css-v4u5dn-MuiInputBase-root-MuiInput-root:after{
+    border-bottom:#945d40 2px solid !important;
+  }
+  
+  .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color:#5a3726 !important;
+  }
+  
+  .css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root:after {
+    border-bottom:#945d40 2px solid !important;
+  }
+  
+  .css-103chds-MuiPaper-root-MuiCard-root {
+    background-color: rgb(175, 174, 174, 0.3) !important;
+    display: inline-block !important;
+    text-align: left !important;
+  }
+  
+  .css-15kyd5c-MuiGrid-root>.MuiGrid-item {
+    text-align: center;
+  }
+  
+  .css-678bp8-MuiStack-root {
+    margin-top: 5vh !important;
+    align-items: center !important;
+    margin-bottom: 22vh !important;
+  }
+  
+  .css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    color: rgb(148, 93, 64, 0.5) !important ;
+      border: 1px solid rgba(90, 55, 38, 0.5) !important;
+      background-color: rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  .css-15kyd5c-MuiGrid-root {
+    align-items: flex-start !important;
+  }
+  
+  .css-1kuq5xv-MuiButtonBase-root-MuiIconButton-root {
+    color:#5a3726 !important;
+  }  
+  
+  .css-12llvlv-MuiButtonBase-root-MuiButton-root {
+    color: rgb(148, 93, 64) !important ;
+    border: 1px solid rgba(90, 55, 38, 0.5) !important;
+  }
+  
+  .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    color: #945d40 !important ;
+    border: 1px solid rgba(90, 55, 38, 0.5) !important;
+  }
+  
+  .css-15v22id-MuiAccordionDetails-root{
+    background-color: #f5e9d4 !important;
+  }
+  
+  .css-ahj2mt-MuiTypography-root {
+    line-height: 1.8 !important ;
+  }
+  
+  #notifier {
+    position:relative;
+  }
+  
+  .css-1t6e9jv-MuiCardActions-root {
+    justify-content: space-between;
+  }
+  
+  .shelf_accordionHeader__GZHGo{
+    justify-content: space-between;
+    width: 100%;
+  }
+  .css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+    width: 45px;
+    height: 45px;
+    background-color: #e9e6e500 !important;
+    border: none !important;
+    color:#945d40 !important;
+  }
+  
+  
+  .css-e7iqpa-MuiButtonBase-root-MuiButton-root{
+    color: #945d40 !important;
+      border: 1px solid rgba(90, 55, 38, 0.5) !important;
+  }
