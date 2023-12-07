@@ -10,7 +10,7 @@ code {
     monospace;
 }
 
-.css-19c55bt-JoyTabList-root .MuiTab-root.Joy-selected::before{
+.MuiTab-root.Joy-selected::before{
   background-color: #5a3726 !important;
 }
 

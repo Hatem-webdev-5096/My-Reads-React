@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { MyContext } from "../context/authCTX";
 import { useNavigate } from "react-router-dom";
 
-const domain = process.env.REACT_APP_SERVER_DOMAIN_NAME;
+const domain = process.env.REACT_APP_SERVER_LOCAL;
 
 const usePost = () => {
   const [response, setResponse] = useState(null);
@@ -15,8 +15,9 @@ const usePost = () => {
 
   const signup = async (fName, lName, email, password) => {
     setIsLoading(true);
+    console.log(process.env)
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME + "/auth/signup",
+      process.env.REACT_APP_SERVER_LOCAL + "/auth/signup",
       {
         credentials: "include",
         method: "POST",
@@ -48,7 +49,7 @@ const usePost = () => {
     setIsLoading(true);
 
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME + "/auth/login",
+      process.env.REACT_APP_SERVER_LOCAL + "/auth/login",
       {
         credentials: "include",
         method: "POST",
@@ -79,7 +80,7 @@ const usePost = () => {
   const activateAccount = async (activationToken) => {
     setIsLoading(true);
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME + "/auth/activateAccount",
+      process.env.REACT_APP_SERVER_LOCAL + "/auth/activateAccount",
       {
         credentials: "include",
         method: "POST",
@@ -106,7 +107,7 @@ const usePost = () => {
   const forgotPassword = async (email) => {
     setIsLoading(true);
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME + "/auth/forgot-password",
+      process.env.REACT_APP_SERVER_LOCAL + "/auth/forgot-password",
       {
         credentials: "include",
         method: "POST",
@@ -132,7 +133,7 @@ const usePost = () => {
   const addToLibrary = async (shelfName, bookId) => {
     setIsLoading(true);
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME + "/library/addBook",
+      process.env.REACT_APP_SERVER_LOCAL + "/library/addBook",
       {
         credentials: "include",
         method: "POST",
@@ -161,7 +162,7 @@ const usePost = () => {
    setIsLoading(true);
     const userId = CTX.user._id;
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME +
+      process.env.REACT_APP_SERVER_LOCAL +
         `/auth/changePassword`,
       {
         credentials: "include",
@@ -190,7 +191,7 @@ const usePost = () => {
   const editShelves = async(action, shelfName, userInput) => {
     setIsLoading(true);
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME +
+      process.env.REACT_APP_SERVER_LOCAL +
         `/library/editShelves`,
       {
         credentials: "include",
@@ -220,7 +221,7 @@ const usePost = () => {
   const addNewShelf = async(shelfName) => {
     setIsLoading(true);
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME +
+      process.env.REACT_APP_SERVER_LOCAL +
         `/library/addNewShelf`,
       {
         credentials: "include",
@@ -249,7 +250,7 @@ const usePost = () => {
   const changeBookShelf = async(bookId, targetShelf, oldShelf) => {
     setIsLoading(true);
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME +
+      process.env.REACT_APP_SERVER_LOCAL +
         `/library/changeBookShelf`,
       {
         credentials: "include",
@@ -279,7 +280,7 @@ const usePost = () => {
   const removeBookFromShelf = async(bookId, bookShelf)=> {
     setIsLoading(true);
     const response = await fetch(
-      process.env.REACT_APP_SERVER_DOMAIN_NAME +
+      process.env.REACT_APP_SERVER_LOCAL +
         `/library/removeBookFromShelf`,
       {
         credentials: "include",

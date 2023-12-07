@@ -29,8 +29,6 @@ const NavBar = ({ username }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const [loadComp, setLoadComp] = useState(false);
-
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -110,7 +108,7 @@ const NavBar = ({ username }) => {
                 variant="h6"
                 noWrap
                 component="a"
-                href={`/hp/${username}`}
+                href={`/hp/${username}/lib`}
                 sx={{
                   mr: 10,
                   display: { xs: "none", md: "flex" },

@@ -167,7 +167,7 @@ const useFetch = () => {
   };
 
   const checkLogin = async () => {
-    const response = await fetch(process.env.REACT_APP_SERVER_DOMAIN_NAME + "/auth/checkLogin", {
+    const response = await fetch(process.env.REACT_APP_SERVER_LOCAL + "/auth/checkLogin", {
       credentials: "include",
       mode: "cors",
       method: "GET"
